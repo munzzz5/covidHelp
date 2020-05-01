@@ -1,0 +1,176 @@
+<resources>
+    <string name="app_name">Covid</string>
+    <string name="mainHeading">Welcome to Helpers United</string>
+    <string name="login">Login</string>
+    <string name="enter_login_id">Enter Login ID</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="please_enter_your_full_name">Please Enter Your Full Name</string>
+    <string name="enter_your_10_digit_mobile_number">Enter your 10 digit mobile number</string>
+    <string name="volunteer">Volunteer</string>
+    <string name="raw_material">Raw Material</string>
+    <string name="transportation">Transportation</string>
+    <string name="lets_go">Let\'s Go!</string>
+    <string-array name="india_states">
+
+        <item>Tamil Nadu</item>
+
+    </string-array>
+    <string-array name="andhra">
+        <item>Kurnool</item>
+        <item>Guntur</item>
+        <item>Nellore</item>
+        <item>Prakasham</item>
+        <item>Krishna</item>
+        <item>YSR</item>
+        <item>West Godavari</item>
+        <item>Chittor</item>
+        <item>Visakhapatnam</item>
+        <item>East Godavari</item>
+        <item>Anantapur</item>
+    </string-array>
+    <string-array name="bihar">
+        <item>Anantapur</item>
+    </string-array>
+    <string-array name="chandigarh">
+        <item>Chandigarh</item>
+    </string-array>
+    <string-array name="chattisgarh">
+        <item>Korba</item>
+    </string-array>
+    <string-array name="delhi">
+        <item>South</item>
+        <item>South East</item>
+        <item>Shahdara</item>
+        <item>West</item>
+        <item>North</item>
+        <item>Central</item>
+        <item>New Delhi</item>
+        <item>East</item>
+        <item>South West</item>
+    </string-array>
+    <string-array name="gujarat">
+        <item>Ahmedabad</item>
+        <item>Vadodara</item>
+        <item>Surat</item>
+        <item>Bhavnagar</item>
+        <item>Rajkot</item>
+    </string-array>
+    <string-array name="haryana">
+        <item>Noah</item>
+        <item>Gurugram</item>
+        <item>Parval</item>
+        <item>Fardiabad</item>
+    </string-array>
+    <string-array name="jammukashmir">
+        <item>Srinagar</item>
+        <item>Bandipora</item>
+        <item>Baramulla</item>
+        <item>Jammu</item>
+        <item>Udhampur</item>
+        <item>Kupwada</item>
+    </string-array>
+    <string-array name="karnataka">
+        <item>Bengaluru Urban</item>
+        <item>Mussoorie</item>
+        <item>Belagavi</item>
+    </string-array>
+    <string-array name="kerala">
+        <item>Kannur</item>
+        <item>Ernakulam</item>
+        <item>Kasaragod</item>
+        <item>Malapuram</item>
+        <item>Pathanamthitta</item>
+    </string-array>
+    <string-array name="madhyapradesh">
+        <item>Indore</item>
+        <item>Bhopal</item>
+        <item>Khargaon</item>
+        <item>Ujjain</item>
+        <item>Hoshangabad</item>
+    </string-array>
+    <string-array name="maharashtra">
+        <item>Mumbai</item>
+        <item>Pune</item>
+        <item>Thane</item>
+        <item>Nagpur</item>
+        <item>Sangli</item>
+        <item>Ahmednagar</item>
+        <item>Yavatmal</item>
+        <item>Aurangabad</item>
+        <item>Buldhana</item>
+        <item>Mumbai Suburban</item>
+        <item>Nashik</item>
+    </string-array>
+    <string-array name="odisha">
+        <item>Khordha</item>
+    </string-array>
+    <string-array name="punjab">
+        <item>SAS Nagar</item>
+        <item>Shaheed Bhagat Singh Nagar</item>
+        <item>Jalandhar</item>
+        <item>Pathankot</item>
+    </string-array>
+    <string-array name="rajasthan">
+        <item>Jaipur</item>
+        <item>Tonk</item>
+        <item>Jodhpur</item>
+        <item>Banswara</item>
+        <item>Kota</item>
+        <item>Jhunjhunu</item>
+        <item>Jaisalmer</item>
+        <item>Bhilwara</item>
+        <item>Bikaner</item>
+        <item>Jalwar</item>
+        <item>Bharatpur</item>
+    </string-array>
+    <string-array name="tamilnadu">
+        <item>Chennai</item>
+        <item>Tiruchirappali</item>
+        <item>Coimbatore</item>
+        <item>Tirunelveli</item>
+        <item>Erode</item>
+        <item>Vellore</item>
+        <item>Dindigul</item>
+        <item>Villupuram</item>
+        <item>Tirupur</item>
+        <item>Thani</item>
+        <item>Namakkal</item>
+        <item>Chengalpattu</item>
+        <item>Madhurai</item>
+        <item>Tatikoran</item>
+        <item>Karur</item>
+        <item>Virudhunaru</item>
+        <item>Kanarukuru</item>
+    </string-array>
+    <string-array name="telangana">
+        <item>Hyderabad</item>
+        <item>Nizamabad</item>
+        <item>Wrangal Urban</item>
+        <item>Ranga Reddy</item>
+        <item>Jogulamba Gadwal</item>
+        <item>Machhal-Malkarjagiri</item>
+        <item>Karimnagar</item>
+        <item>Nirmal</item>
+    </string-array>
+    <string-array name="uttarpradesh">
+        <item>Agra</item>
+        <item>Gautam Buddha Nagar</item>
+        <item>Meerut</item>
+        <item>Lucknow</item>
+        <item>Ghaziabad</item>
+        <item>Shaharanpur</item>
+        <item>Shamli</item>
+        <item>Firozabad</item>
+        <item>Moradabad</item>
+    </string-array>
+    <string-array name="uttarakhand">
+        <item>Dehradun</item>
+    </string-array>
+    <string-array name="westbengal">
+        <item>Kolkata</item>
+        <item>Howrah</item>
+        <item>Madinapur East</item>
+        <item>24 Parganas North</item>
+    </string-array>
+</resources>
