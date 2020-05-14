@@ -7,11 +7,16 @@
     tools:context=".signUp">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/linearLayout"
+        android:layout_width="411dp"
+        android:layout_height="695dp"
+
+        android:layout_marginTop="37dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="94dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/tvSignup1"
@@ -30,39 +35,84 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5sp"
+            android:autofillHints=""
             android:ems="10"
             android:hint="@string/please_enter_your_full_name"
-            android:inputType="textPersonName"
-            android:autofillHints="" />
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/etSignUpPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5sp"
+            android:autofillHints=""
             android:ems="10"
+            android:gravity="center_vertical"
             android:hint="@string/enter_your_10_digit_mobile_number"
             android:inputType="phone"
-            android:autofillHints="" />
+            android:padding="5sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:gravity="center_horizontal|center_vertical"
+            android:padding="5sp"
+            android:text="Select Date of Birth"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_margin="5sp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/signUpDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/dayOfMonth" />
+
+
+            <Spinner
+                android:id="@+id/signUpMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/months" />
+
+            <Spinner
+                android:id="@+id/signUpYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/years" />
+        </LinearLayout>
 
         <Spinner
             android:id="@+id/spSignUpState"
             android:layout_width="match_parent"
-            android:entries="@array/india_states"
             android:layout_height="wrap_content"
-            android:layout_margin="5sp" />
+            android:layout_margin="5sp"
+            android:entries="@array/india_states"
+            android:padding="5sp" />
 
         <Spinner
             android:id="@+id/spSignUpCity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5sp" />
+            android:layout_margin="5sp"
+            android:padding="5sp" />
 
         <Spinner
             android:id="@+id/spSignUpLocality"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5sp" />
+            android:layout_margin="5sp"
+            android:padding="5sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -94,13 +144,15 @@
 
         <Button
             android:id="@+id/btSignUp"
-            android:layout_width="match_parent"
+            android:layout_width="185dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="100sp"
-            android:layout_marginTop="150sp"
             android:layout_marginRight="100sp"
             android:background="@color/primary_light"
-            android:text="@string/lets_go" />
+            android:enabled="true"
+            android:isScrollContainer="false"
+            android:text="@string/lets_go"
+            android:visibility="visible" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

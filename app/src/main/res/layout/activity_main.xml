@@ -62,5 +62,14 @@
             android:background="@color/primary_dark"
             android:layout_marginRight="100sp"
             android:text="@string/login" />
+
+        <Button
+            android:id="@+id/goTosignUp"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15sp"
+            android:background="@color/primary_dark"
+            android:text="Sign Up" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
