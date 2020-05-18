@@ -2,8 +2,8 @@
     <string name="app_name">Covid</string>
     <string name="mainHeading">Welcome to Helpers United</string>
     <string name="login">Login</string>
-    <string name="enter_login_id">Enter Login ID</string>
-    <string name="password">Password</string>
+    <string name="enter_login_id">Enter Phone Number</string>
+    <string name="password">OTP</string>
     <string name="sign_up">Sign up</string>
     <string name="please_enter_your_full_name">Please Enter Your Full Name</string>
     <string name="enter_your_10_digit_mobile_number">Enter your 10 digit mobile number</string>
@@ -11,6 +11,8 @@
     <string name="raw_material">Raw Material</string>
     <string name="transportation">Transportation</string>
     <string name="lets_go">Let\'s Go!</string>
+    <string name="null1">null</string>
+    <string name="home">Home</string>
     <string-array name="india_states">
 
         <item>Tamil Nadu</item>

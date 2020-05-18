@@ -2,6 +2,7 @@ package com.example.covid;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -20,7 +21,7 @@ public class db extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase SQLdb) {
-        SQLdb.execSQL("CREATE TABLE USERS (ID INTEGER PRIMARY KEY, NAME TEXT, MOBNO TEXT, STATE TEXT, CITY TEXT , LOCALITY TEXT,DOB DATE, VOLUNTEER INTEGER , RAWMATERIAL INTEGER, TRANSPORTATION INTEGER)");
+        SQLdb.execSQL("CREATE TABLE USERS (NAME TEXT, MOBNO TEXT PRIMARY KEY, STATE TEXT, CITY TEXT , LOCALITY TEXT,DOB DATE, VOLUNTEER INTEGER , RAWMATERIAL INTEGER, TRANSPORTATION INTEGER)");
     }
 
     @Override
@@ -31,7 +32,7 @@ public class db extends SQLiteOpenHelper {
     {
         ContentValues cv=new ContentValues();
         java.sql.Date d1=new java.sql.Date(u.getDob().getTime().getTime());
-        cv.put("ID",uid++);
+        //cv.put("ID",uid++);
         cv.put("NAME",u.getName());
         cv.put("MOBNO",u.getPhNo());
         cv.put("STATE",u.getState());
@@ -42,9 +43,22 @@ public class db extends SQLiteOpenHelper {
         cv.put("RAWMATERIAL",u.isRawMaterial());
         cv.put("TRANSPORTATION",u.isTransportation());
         this.getWritableDatabase().insertOrThrow("USERS","",cv);
-        return String.valueOf(uid);
+        return String.valueOf(u.getPhNo());
 
     }
+    public String checkPhNo(String phno) {
+        SQLiteDatabase sql1=this.getReadableDatabase();
+        Cursor cr = sql1.rawQuery("SELECT * FROM USERS WHERE MOBNO='"+phno+"'",null);
+
+        if(cr.getCount()!=0) {
+            while (cr.moveToNext()) {
+                return cr.getString(1);
+            }
+        }
+        return null;
+
+    }
+
     public void deleteUser(user u)
     {
 
